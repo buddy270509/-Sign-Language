@@ -54,8 +54,9 @@ npm run build        # typecheck + production build → dist/
 npm run preview      # serve the production build
 npm run typecheck    # tsc --noEmit
 npm run check:signs  # validate the sign dictionaries (see §7)
+npm run check:text   # assert the text/grammar pipeline (normalise, sentence type, tokens)
 npm run check:render # render every route headlessly and assert basic a11y
-npm run check        # all three checks above
+npm run check        # all four checks above
 npm run render:avatar # regenerate docs/avatar-review/*.png (review sheets for signers)
 ```
 
@@ -72,6 +73,7 @@ variables, no API keys, no backend.
 ├── public/                       # manifest + icon (PWA shell arrives in Phase 9)
 ├── scripts/
 │   ├── validate-signs.mjs        # dictionary schema + coverage guard
+│   ├── check-text.ts             # text/grammar regression checks
 │   ├── ssr-smoke.tsx             # renders every route headlessly
 │   └── render-avatar.tsx         # PNG review sheets for deaf signer review
 ├── docs/

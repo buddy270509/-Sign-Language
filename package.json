@@ -11,8 +11,9 @@
     "typecheck": "tsc --noEmit",
     "check:signs": "node scripts/validate-signs.mjs",
     "check:render": "tsx scripts/ssr-smoke.tsx",
-    "check": "npm run typecheck && npm run check:signs && npm run check:render",
-    "render:avatar": "tsx scripts/render-avatar.tsx"
+    "check": "npm run typecheck && npm run check:signs && npm run check:text && npm run check:render",
+    "render:avatar": "tsx scripts/render-avatar.tsx",
+    "check:text": "tsx scripts/check-text.ts"
   },
   "dependencies": {
     "react": "^19.3.1",
