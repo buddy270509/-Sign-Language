@@ -1,0 +1,192 @@
+{
+  "id": "demo-emphasis",
+  "label": "Emphasis",
+  "duration_ms": 1600,
+  "tracks": {
+    "rightHand": [
+      {
+        "t": 0.0,
+        "wrist": [
+          0.5,
+          0.4,
+          0.4
+        ],
+        "handshape": "flat",
+        "palm": "down",
+        "roll": 0,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.16,
+        "wrist": [
+          0.5,
+          0.54,
+          0.35
+        ],
+        "ease": "snappy"
+      },
+      {
+        "t": 0.36,
+        "wrist": [
+          0.51,
+          0.39,
+          0.4
+        ],
+        "ease": "easeIn"
+      },
+      {
+        "t": 0.52,
+        "wrist": [
+          0.51,
+          0.55,
+          0.35
+        ],
+        "ease": "snappy"
+      },
+      {
+        "t": 0.72,
+        "wrist": [
+          0.52,
+          0.38,
+          0.4
+        ],
+        "ease": "easeIn"
+      },
+      {
+        "t": 1.0,
+        "wrist": [
+          0.56,
+          0.62,
+          0.3
+        ],
+        "handshape": "relaxed",
+        "palm": "forward",
+        "roll": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "leftHand": [],
+    "face": [
+      {
+        "t": 0.0,
+        "browFurrowL": 0.35,
+        "browFurrowR": 0.35,
+        "lipsPressed": 0.2,
+        "mouthSmile": 0.05,
+        "eyeOpenL": 0.75,
+        "eyeOpenR": 0.75
+      },
+      {
+        "t": 0.18,
+        "browFurrowL": 0.55,
+        "browFurrowR": 0.55,
+        "lipsPressed": 0.4,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.55,
+        "browFurrowL": 0.45,
+        "browFurrowR": 0.45,
+        "lipsPressed": 0.3
+      },
+      {
+        "t": 1.0,
+        "browFurrowL": 0.1,
+        "browFurrowR": 0.1,
+        "lipsPressed": 0,
+        "mouthSmile": 0.1,
+        "ease": "easeInOut"
+      }
+    ],
+    "head": [
+      {
+        "t": 0.0,
+        "pitch": 4,
+        "offsetY": 0
+      },
+      {
+        "t": 0.16,
+        "pitch": 9,
+        "offsetY": 3,
+        "ease": "snappy"
+      },
+      {
+        "t": 0.36,
+        "pitch": 3,
+        "offsetY": 0,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.52,
+        "pitch": 9,
+        "offsetY": 3,
+        "ease": "snappy"
+      },
+      {
+        "t": 0.72,
+        "pitch": 3,
+        "offsetY": 0,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 1.0,
+        "pitch": 0,
+        "offsetY": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "body": [
+      {
+        "t": 0.0,
+        "leanForward": 0.1
+      },
+      {
+        "t": 0.16,
+        "leanForward": 0.24,
+        "ease": "snappy"
+      },
+      {
+        "t": 0.36,
+        "leanForward": 0.08,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.52,
+        "leanForward": 0.24,
+        "ease": "snappy"
+      },
+      {
+        "t": 0.72,
+        "leanForward": 0.08,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 1.0,
+        "leanForward": 0,
+        "ease": "easeInOut"
+      }
+    ]
+  },
+  "meta": {
+    "language": "ISL",
+    "description": "Three quick downward beats of the flat hand with the brows down and the body leaning in. Demo animation \u2014 NOT verified by a deaf signer and not a claim about correct ISL.",
+    "reviewed_by_deaf_signer": false,
+    "demo": true,
+    "channels": [
+      "hands",
+      "arms",
+      "face",
+      "head",
+      "body"
+    ]
+  },
+  "nonManualOverlay": {
+    "expression": "emphasis",
+    "weight": 0.5,
+    "groups": [
+      "brows",
+      "eyes"
+    ]
+  },
+  "intensity": 1.15
+}

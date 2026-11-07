@@ -19,7 +19,14 @@ export type IconName =
   | 'sparkle'
   | 'arrowRight'
   | 'close'
-  | 'bulb';
+  | 'bulb'
+  | 'stop'
+  | 'grid'
+  | 'pencil'
+  | 'download'
+  | 'upload'
+  | 'layers'
+  | 'clock';
 
 const PATHS: Record<IconName, string> = {
   home: 'M3 10.5 12 3l9 7.5M5.5 9.5V20h13V9.5',
@@ -43,6 +50,13 @@ const PATHS: Record<IconName, string> = {
   arrowRight: 'M4 12h15M13 6l6 6-6 6',
   close: 'M6 6l12 12M18 6 6 18',
   bulb: 'M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.5.4.8 1 .9 1.6l.1.6h5.2l.1-.6c.1-.6.4-1.2.9-1.6A6 6 0 0 0 12 3Z',
+  stop: 'M6.5 6.5h11v11h-11z',
+  grid: 'M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z',
+  pencil: 'M4 20h4L20 8l-4-4L4 16v4ZM14.5 5.5 18.5 9.5',
+  download: 'M12 3v12M7.5 10.5 12 15l4.5-4.5M4 19h16',
+  upload: 'M12 15V3M7.5 7.5 12 3l4.5 4.5M4 19h16',
+  layers: 'M12 3 3 8l9 5 9-5-9-5ZM3 13l9 5 9-5M3 17.5l9 5 9-5',
+  clock: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM12 7.5V12l3.5 2',
 };
 
 export function Icon({

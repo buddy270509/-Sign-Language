@@ -1,0 +1,253 @@
+{
+  "id": "demo-all-channels",
+  "label": "All five channels",
+  "duration_ms": 2200,
+  "tracks": {
+    "rightHand": [
+      {
+        "t": 0.0,
+        "wrist": [
+          0.66,
+          0.62,
+          0.3
+        ],
+        "handshape": "fist",
+        "palm": "forward",
+        "roll": 0,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.3,
+        "wrist": [
+          0.72,
+          0.2,
+          0.45
+        ],
+        "handshape": "open-5",
+        "palm": "forward",
+        "roll": 8,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.55,
+        "wrist": [
+          0.74,
+          0.12,
+          0.45
+        ],
+        "roll": -6,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.8,
+        "wrist": [
+          0.76,
+          0.46,
+          0.35
+        ],
+        "handshape": "flat",
+        "palm": "down",
+        "roll": 0,
+        "ease": "easeIn"
+      },
+      {
+        "t": 1.0,
+        "wrist": [
+          0.66,
+          0.6,
+          0.3
+        ],
+        "handshape": "relaxed",
+        "palm": "forward",
+        "roll": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "leftHand": [
+      {
+        "t": 0.0,
+        "wrist": [
+          0.34,
+          0.62,
+          0.3
+        ],
+        "handshape": "fist",
+        "palm": "forward",
+        "roll": 0,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.3,
+        "wrist": [
+          0.28,
+          0.2,
+          0.4
+        ],
+        "handshape": "open-5",
+        "palm": "forward",
+        "roll": -8,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.8,
+        "wrist": [
+          0.24,
+          0.46,
+          0.32
+        ],
+        "handshape": "flat",
+        "palm": "down",
+        "roll": 0,
+        "ease": "easeIn"
+      },
+      {
+        "t": 1.0,
+        "wrist": [
+          0.34,
+          0.6,
+          0.3
+        ],
+        "handshape": "relaxed",
+        "palm": "forward",
+        "roll": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "face": [
+      {
+        "t": 0.0,
+        "browRaiseL": 0.15,
+        "browRaiseR": 0.15,
+        "mouthOpen": 0.08
+      },
+      {
+        "t": 0.28,
+        "browRaiseL": 1,
+        "browRaiseR": 1,
+        "eyeOpenL": 1,
+        "eyeOpenR": 1,
+        "mouthOpen": 0.5,
+        "mouthAh": 0.7,
+        "mouthWidth": 0.45,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.6,
+        "browRaiseL": 0.9,
+        "browRaiseR": 0.9,
+        "mouthOpen": 0.45,
+        "mouthAh": 0.6
+      },
+      {
+        "t": 0.85,
+        "mouthSmile": 0.7,
+        "mouthOpen": 0.12,
+        "mouthAh": 0,
+        "browRaiseL": 0.35,
+        "browRaiseR": 0.35,
+        "cheekRaise": 0.6,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 1.0,
+        "mouthSmile": 0.1,
+        "browRaiseL": 0.15,
+        "browRaiseR": 0.15,
+        "cheekRaise": 0.1,
+        "eyeOpenL": 0.6,
+        "eyeOpenR": 0.6,
+        "ease": "easeInOut"
+      }
+    ],
+    "head": [
+      {
+        "t": 0.0,
+        "pitch": 0,
+        "roll": 0,
+        "forward": 0
+      },
+      {
+        "t": 0.3,
+        "pitch": -14,
+        "roll": 4,
+        "forward": -0.2,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.6,
+        "pitch": -10,
+        "roll": -3,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.85,
+        "pitch": 8,
+        "roll": 2,
+        "ease": "easeIn"
+      },
+      {
+        "t": 1.0,
+        "pitch": 0,
+        "roll": 0,
+        "forward": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "body": [
+      {
+        "t": 0.0,
+        "leanForward": 0,
+        "leanSide": 0,
+        "shoulderRaiseL": 0,
+        "shoulderRaiseR": 0
+      },
+      {
+        "t": 0.3,
+        "leanForward": -0.2,
+        "shoulderRaiseL": 0.4,
+        "shoulderRaiseR": 0.5,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.62,
+        "leanForward": 0.35,
+        "leanSide": 0.12,
+        "shoulderRaiseL": -0.2,
+        "shoulderRaiseR": -0.1,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 1.0,
+        "leanForward": 0,
+        "leanSide": 0,
+        "shoulderRaiseL": 0,
+        "shoulderRaiseR": 0,
+        "ease": "easeInOut"
+      }
+    ]
+  },
+  "meta": {
+    "language": "ISL",
+    "description": "Every channel moving at once: hands rise and fall, arms open, face goes from surprise to a smile, head lifts and settles, torso leans and shoulders shrug. Demo animation \u2014 NOT verified by a deaf signer and not a claim about correct ISL.",
+    "reviewed_by_deaf_signer": false,
+    "demo": true,
+    "channels": [
+      "hands",
+      "arms",
+      "face",
+      "head",
+      "body",
+      "two-hands"
+    ]
+  },
+  "nonManualOverlay": {
+    "expression": "surprised",
+    "weight": 0.4,
+    "groups": [
+      "brows",
+      "eyes",
+      "cheeks"
+    ]
+  },
+  "intensity": 1.05
+}

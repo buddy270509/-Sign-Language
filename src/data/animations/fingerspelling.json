@@ -1,0 +1,1899 @@
+{
+  "meta": {
+    "name": "ISL fingerspelling (draft)",
+    "language": "ISL",
+    "version": "2.0.0"
+  },
+  "animations": [
+    {
+      "id": "fs-a",
+      "label": "A",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-a",
+            "palm": "forward",
+            "palmYaw": -20,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter A \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-b",
+      "label": "B",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-b",
+            "palm": "forward",
+            "palmYaw": -35,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter B \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-c",
+      "label": "C",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-c",
+            "palm": "left",
+            "palmYaw": 24,
+            "roll": -6,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter C \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-d",
+      "label": "D",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-d",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter D \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-e",
+      "label": "E",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-e",
+            "palm": "forward",
+            "palmYaw": -44,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter E \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-f",
+      "label": "F",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-f",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter F \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-g",
+      "label": "G",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-g",
+            "palm": "left",
+            "palmYaw": 20,
+            "roll": -25,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter G \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-h",
+      "label": "H",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-h",
+            "palm": "left",
+            "palmYaw": 10,
+            "roll": -72,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter H \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-i",
+      "label": "I",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-i",
+            "palm": "forward",
+            "palmYaw": -20,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter I \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-j",
+      "label": "J",
+      "duration_ms": 900,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-j",
+            "palm": "forward",
+            "palmYaw": -20,
+            "roll": 0,
+            "wrist": [
+              0.5818,
+              0.5249,
+              0.2
+            ]
+          },
+          {
+            "t": 0.35,
+            "wrist": [
+              0.5614,
+              0.5986,
+              0.2
+            ],
+            "ease": "easeInOut"
+          },
+          {
+            "t": 0.75,
+            "wrist": [
+              0.5307,
+              0.6092,
+              0.2
+            ],
+            "ease": "easeOut"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5205,
+              0.6092,
+              0.2
+            ],
+            "ease": "easeOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter J \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-k",
+      "label": "K",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-k",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter K \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-l",
+      "label": "L",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-l",
+            "palm": "forward",
+            "palmYaw": -15,
+            "roll": -8,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter L \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-m",
+      "label": "M",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-m",
+            "palm": "forward",
+            "palmYaw": -22,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter M \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-n",
+      "label": "N",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-n",
+            "palm": "forward",
+            "palmYaw": -22,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter N \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-o",
+      "label": "O",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-o",
+            "palm": "left",
+            "palmYaw": 32,
+            "roll": -4,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter O \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-p",
+      "label": "P",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-p",
+            "palm": "forward",
+            "palmYaw": -40,
+            "roll": -120,
+            "wrist": [
+              0.5614,
+              0.5354,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.5249,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.5249,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter P \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-q",
+      "label": "Q",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-q",
+            "palm": "left",
+            "palmYaw": 30,
+            "roll": -120,
+            "wrist": [
+              0.5614,
+              0.5354,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.5249,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.5249,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter Q \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-r",
+      "label": "R",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-r",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter R \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-s",
+      "label": "S",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-s",
+            "palm": "forward",
+            "palmYaw": -20,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter S \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-t",
+      "label": "T",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-t",
+            "palm": "forward",
+            "palmYaw": -20,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter T \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-u",
+      "label": "U",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-u",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter U \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-v",
+      "label": "V",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-v",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter V \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-w",
+      "label": "W",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-w",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter W \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-x",
+      "label": "X",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-x",
+            "palm": "forward",
+            "palmYaw": -25,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter X \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-y",
+      "label": "Y",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-y",
+            "palm": "forward",
+            "palmYaw": -25,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter Y \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-z",
+      "label": "Z",
+      "duration_ms": 900,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-z",
+            "palm": "forward",
+            "palmYaw": -40,
+            "roll": 0,
+            "wrist": [
+              0.5102,
+              0.5459,
+              0.2
+            ]
+          },
+          {
+            "t": 0.33,
+            "wrist": [
+              0.6125,
+              0.5459,
+              0.2
+            ],
+            "ease": "linear"
+          },
+          {
+            "t": 0.66,
+            "wrist": [
+              0.5102,
+              0.5986,
+              0.2
+            ],
+            "ease": "linear"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.6125,
+              0.5986,
+              0.2
+            ],
+            "ease": "easeOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Letter Z \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-0",
+      "label": "0",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-0",
+            "palm": "forward",
+            "palmYaw": -25,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Number 0 \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-1",
+      "label": "1",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-1",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Number 1 \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-2",
+      "label": "2",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-2",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Number 2 \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-3",
+      "label": "3",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-3",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Number 3 \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-4",
+      "label": "4",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-4",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Number 4 \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-5",
+      "label": "5",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-5",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Number 5 \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-6",
+      "label": "6",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-6",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Number 6 \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-7",
+      "label": "7",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-7",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Number 7 \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-8",
+      "label": "8",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-8",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Number 8 \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    },
+    {
+      "id": "fs-9",
+      "label": "9",
+      "duration_ms": 520,
+      "tracks": {
+        "rightHand": [
+          {
+            "t": 0,
+            "handshape": "fs-9",
+            "palm": "forward",
+            "palmYaw": -30,
+            "roll": 0,
+            "wrist": [
+              0.5614,
+              0.5776,
+              0.2
+            ]
+          },
+          {
+            "t": 0.3,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "snappy"
+          },
+          {
+            "t": 1,
+            "wrist": [
+              0.5614,
+              0.567,
+              0.2
+            ],
+            "ease": "easeInOut"
+          }
+        ],
+        "leftHand": [],
+        "face": [],
+        "head": [],
+        "body": []
+      },
+      "meta": {
+        "language": "ISL",
+        "description": "Number 9 \u2014 one-handed fingerspelling (draft, awaiting deaf signer review).",
+        "reviewed_by_deaf_signer": false,
+        "demo": false,
+        "channels": [
+          "hands"
+        ]
+      }
+    }
+  ]
+}

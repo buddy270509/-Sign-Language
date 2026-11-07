@@ -16,9 +16,15 @@ interface NavItem {
 const NAV: NavItem[] = [
   { to: '/', labelKey: 'nav.home', icon: 'home' },
   { to: '/text-to-sign', labelKey: 'nav.textToSign', icon: 'hand' },
+  { to: '/demos', labelKey: 'nav.demos', icon: 'layers' },
+  { to: '/gallery', labelKey: 'nav.gallery', icon: 'grid' },
+  { to: '/studio', labelKey: 'nav.studio', icon: 'pencil' },
   { to: '/camera', labelKey: 'nav.camera', icon: 'camera' },
   { to: '/settings', labelKey: 'nav.settings', icon: 'settings' },
 ];
+
+/** The bottom bar only has room for five destinations on a phone. */
+const MOBILE_NAV = [NAV[0], NAV[1], NAV[2], NAV[4], NAV[6]] as NavItem[];
 
 function Logo() {
   return (
@@ -69,8 +75,8 @@ export function AppShell() {
             })}
           </nav>
 
-          <span className="chip hidden md:inline-flex" title="Phase 1 build">
-            Phase 1
+          <span className="chip hidden md:inline-flex" title="Phase 2 build">
+            Phase 2
           </span>
         </div>
       </header>
@@ -91,8 +97,8 @@ export function AppShell() {
         aria-label="Main"
         className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-surface pb-[env(safe-area-inset-bottom)] sm:hidden"
       >
-        <ul className="grid grid-cols-4">
-          {NAV.map((item) => {
+        <ul className="grid grid-cols-5">
+          {MOBILE_NAV.map((item) => {
             const active = item.to === '/' ? location.pathname === '/' : location.pathname.startsWith(item.to);
             return (
               <li key={item.to}>

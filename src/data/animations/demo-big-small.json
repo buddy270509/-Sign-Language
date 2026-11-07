@@ -1,0 +1,201 @@
+{
+  "id": "demo-big-small",
+  "label": "Big and small",
+  "duration_ms": 1800,
+  "tracks": {
+    "rightHand": [
+      {
+        "t": 0.0,
+        "wrist": [
+          0.58,
+          0.58,
+          0.35
+        ],
+        "handshape": "flat",
+        "palm": "back",
+        "roll": 0,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.35,
+        "wrist": [
+          0.86,
+          0.5,
+          0.4
+        ],
+        "handshape": "open-5",
+        "palm": "left",
+        "roll": 18,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.66,
+        "wrist": [
+          0.55,
+          0.58,
+          0.4
+        ],
+        "handshape": "pinch",
+        "palm": "back",
+        "roll": 0,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.84,
+        "wrist": [
+          0.56,
+          0.55,
+          0.4
+        ],
+        "ease": "easeInOut"
+      },
+      {
+        "t": 1.0,
+        "wrist": [
+          0.6,
+          0.6,
+          0.3
+        ],
+        "handshape": "relaxed",
+        "palm": "forward",
+        "roll": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "leftHand": [
+      {
+        "t": 0.0,
+        "wrist": [
+          0.42,
+          0.58,
+          0.35
+        ],
+        "handshape": "flat",
+        "palm": "back",
+        "roll": 0,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.35,
+        "wrist": [
+          0.14,
+          0.5,
+          0.4
+        ],
+        "handshape": "open-5",
+        "palm": "right",
+        "roll": -18,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.66,
+        "wrist": [
+          0.45,
+          0.58,
+          0.4
+        ],
+        "handshape": "pinch",
+        "palm": "back",
+        "roll": 0,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.84,
+        "wrist": [
+          0.44,
+          0.55,
+          0.4
+        ],
+        "ease": "easeInOut"
+      },
+      {
+        "t": 1.0,
+        "wrist": [
+          0.4,
+          0.6,
+          0.3
+        ],
+        "handshape": "relaxed",
+        "palm": "forward",
+        "roll": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "face": [
+      {
+        "t": 0.0,
+        "mouthWidth": 0.45,
+        "mouthSmile": 0.15,
+        "browRaiseL": 0.2,
+        "browRaiseR": 0.2
+      },
+      {
+        "t": 0.35,
+        "mouthWidth": 0.95,
+        "mouthSmile": 0.3,
+        "browRaiseL": 0.6,
+        "browRaiseR": 0.6,
+        "eyeOpenL": 0.8,
+        "eyeOpenR": 0.8,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.66,
+        "mouthWidth": 0.3,
+        "lipPurse": 0.55,
+        "browRaiseL": 0.25,
+        "browRaiseR": 0.25,
+        "mouthSmile": 0.1,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 1.0,
+        "mouthWidth": 0.5,
+        "lipPurse": 0,
+        "browRaiseL": 0.15,
+        "browRaiseR": 0.15,
+        "mouthSmile": 0.15,
+        "ease": "easeInOut"
+      }
+    ],
+    "head": [
+      {
+        "t": 0.0,
+        "pitch": 0,
+        "roll": 0
+      },
+      {
+        "t": 0.35,
+        "pitch": -5,
+        "roll": -4,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.66,
+        "pitch": 6,
+        "roll": 4,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 1.0,
+        "pitch": 0,
+        "roll": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "body": []
+  },
+  "meta": {
+    "language": "ISL",
+    "description": "Hands spread wide with a wide mouth for \"big\", then pinch close together with pursed lips for \"small\". Demo animation \u2014 NOT verified by a deaf signer and not a claim about correct ISL.",
+    "reviewed_by_deaf_signer": false,
+    "demo": true,
+    "channels": [
+      "hands",
+      "arms",
+      "face",
+      "head",
+      "two-hands"
+    ]
+  }
+}

@@ -22,8 +22,31 @@ const en = {
 
   'nav.home': 'Home',
   'nav.textToSign': 'Text to Sign',
+  'nav.demos': 'Demos',
+  'nav.gallery': 'Handshapes',
+  'nav.studio': 'Sign Studio',
   'nav.camera': 'Camera',
   'nav.settings': 'Settings',
+
+  'player.face': 'Face',
+  'player.view': 'View',
+  'player.stop': 'Stop',
+  'player.hideLabel': 'Hide face label',
+  'player.showLabel': 'Show face label',
+  'player.demoNotice': 'Demo motion — not verified by a deaf signer. Not a claim about correct ISL.',
+
+  'demos.title': 'Demo animations',
+  'demos.subtitle':
+    'Ten motions that exercise the engine: one hand, two hands, face, head and the whole body. Every clip is a demo, not a lesson.',
+  'demos.playAll': 'Play all',
+  'demos.channels': 'Channels used',
+
+  'gallery.title': 'Handshape gallery',
+  'gallery.subtitle':
+    'Every handshape is a set of finger joint angles. Palm orientation is a separate control, so the same shape can face any direction.',
+  'gallery.rotate': 'Rotate the hand',
+  'gallery.palm': 'Palm orientation',
+  'gallery.all': 'All shapes',
 
   'common.play': 'Play',
   'common.pause': 'Pause',
@@ -109,6 +132,17 @@ const en = {
   'settings.debug': 'Show 21 hand points (debug)',
   'settings.labels': 'Show expression labels',
   'settings.reset': 'Reset all settings',
+  'settings.avatarStyle': 'Avatar style',
+  'settings.avatarStyle.human': 'Simple human',
+  'settings.avatarStyle.stick': 'Stick figure',
+  'settings.outfit': 'Outfit colour',
+  'settings.view': 'Default camera',
+  'settings.transition': 'Sign-to-sign transition',
+  'settings.overlay': 'Expression overlay',
+  'settings.overlayWeight': 'Overlay strength',
+  'settings.fps': 'Show FPS meter',
+  'settings.motionBody':
+    'Reduced motion stills the idle breathing and stops decorative animation. Signs still play when you press play.',
   'settings.privacyTitle': 'Privacy and data',
   'settings.privacyBody':
     'Phase 1 collects nothing. There is no analytics, no account and no upload. Video never leaves your device — the camera page only shows a local preview when you ask for it.',

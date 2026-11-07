@@ -1,0 +1,102 @@
+{
+  "id": "demo-yes",
+  "label": "Yes (head nod)",
+  "duration_ms": 1200,
+  "tracks": {
+    "rightHand": [
+      {
+        "t": 0.0,
+        "wrist": [
+          0.63,
+          0.6,
+          0.3
+        ],
+        "handshape": "fist",
+        "palm": "forward",
+        "roll": 0
+      },
+      {
+        "t": 0.3,
+        "wrist": [
+          0.63,
+          0.55,
+          0.35
+        ],
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.7,
+        "wrist": [
+          0.63,
+          0.6,
+          0.3
+        ],
+        "ease": "easeInOut"
+      }
+    ],
+    "leftHand": [],
+    "face": [
+      {
+        "t": 0.0,
+        "mouthSmile": 0.25,
+        "browRaiseL": 0.2,
+        "browRaiseR": 0.2
+      },
+      {
+        "t": 0.3,
+        "mouthSmile": 0.45,
+        "browRaiseL": 0.3,
+        "browRaiseR": 0.3
+      },
+      {
+        "t": 1.0,
+        "mouthSmile": 0.25,
+        "browRaiseL": 0.2,
+        "browRaiseR": 0.2
+      }
+    ],
+    "head": [
+      {
+        "t": 0.0,
+        "pitch": 0,
+        "offsetY": 0
+      },
+      {
+        "t": 0.22,
+        "pitch": 14,
+        "offsetY": 5,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.45,
+        "pitch": -3,
+        "offsetY": -2,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.68,
+        "pitch": 12,
+        "offsetY": 4,
+        "ease": "easeOut"
+      },
+      {
+        "t": 1.0,
+        "pitch": 0,
+        "offsetY": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "body": []
+  },
+  "meta": {
+    "language": "ISL",
+    "description": "Two downward head nods with a small fist movement, marking \"yes\". Demo animation \u2014 NOT verified by a deaf signer and not a claim about correct ISL.",
+    "reviewed_by_deaf_signer": false,
+    "demo": true,
+    "channels": [
+      "head",
+      "face",
+      "hands"
+    ]
+  }
+}

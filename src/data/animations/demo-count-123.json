@@ -1,0 +1,168 @@
+{
+  "id": "demo-count-123",
+  "label": "Counting 1, 2, 3",
+  "duration_ms": 2400,
+  "tracks": {
+    "rightHand": [
+      {
+        "t": 0.0,
+        "wrist": [
+          0.62,
+          0.52,
+          0.35
+        ],
+        "handshape": "point",
+        "palm": "back",
+        "roll": 0,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.18,
+        "wrist": [
+          0.62,
+          0.58,
+          0.35
+        ],
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.34,
+        "handshape": "v-shape",
+        "wrist": [
+          0.63,
+          0.5,
+          0.35
+        ],
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.5,
+        "wrist": [
+          0.63,
+          0.57,
+          0.35
+        ],
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.66,
+        "handshape": "three-finger",
+        "wrist": [
+          0.64,
+          0.49,
+          0.35
+        ],
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.84,
+        "wrist": [
+          0.64,
+          0.57,
+          0.35
+        ],
+        "ease": "easeInOut"
+      },
+      {
+        "t": 1.0,
+        "handshape": "relaxed",
+        "wrist": [
+          0.62,
+          0.6,
+          0.3
+        ],
+        "ease": "easeInOut"
+      }
+    ],
+    "leftHand": [],
+    "face": [
+      {
+        "t": 0.0,
+        "mouthSmile": 0.2,
+        "browRaiseL": 0.2,
+        "browRaiseR": 0.2
+      },
+      {
+        "t": 0.2,
+        "mouthOpen": 0.25,
+        "browRaiseL": 0.35,
+        "browRaiseR": 0.35,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.4,
+        "mouthOpen": 0.15,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.7,
+        "mouthOpen": 0.2,
+        "browRaiseL": 0.3,
+        "browRaiseR": 0.3
+      },
+      {
+        "t": 1.0,
+        "mouthOpen": 0.08,
+        "mouthSmile": 0.2,
+        "browRaiseL": 0.2,
+        "browRaiseR": 0.2,
+        "ease": "easeInOut"
+      }
+    ],
+    "head": [
+      {
+        "t": 0.0,
+        "pitch": 0,
+        "yaw": 0
+      },
+      {
+        "t": 0.18,
+        "pitch": 6,
+        "yaw": 2,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.34,
+        "pitch": 0,
+        "yaw": 3,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.5,
+        "pitch": 6,
+        "yaw": 4,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.66,
+        "pitch": 0,
+        "yaw": 4,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.84,
+        "pitch": 6,
+        "yaw": 3,
+        "ease": "easeOut"
+      },
+      {
+        "t": 1.0,
+        "pitch": 0,
+        "yaw": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "body": []
+  },
+  "meta": {
+    "language": "ISL",
+    "description": "The hand counts one, two, three with a small downward beat on each number. Demo animation \u2014 NOT verified by a deaf signer and not a claim about correct ISL.",
+    "reviewed_by_deaf_signer": false,
+    "demo": true,
+    "channels": [
+      "hands",
+      "face",
+      "head"
+    ]
+  }
+}

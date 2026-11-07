@@ -32,6 +32,8 @@
   --sb-shirt-edge: #0c3345;
   --sb-lip: #a9625d;
   --sb-mouth-inner: #5a2d2f;
+  /* Plain, low-distraction stage behind the avatar. */
+  --sb-stage: #f7fafc;
 
   color-scheme: light;
 }
@@ -69,6 +71,24 @@ html[data-skin='tone5'] {
 }
 
 /* High contrast mode: black canvas, yellow brand, thicker borders. */
+/* Outfit colours. Chosen to sit apart from all five skin tones. */
+html[data-outfit='navy'] {
+  --sb-shirt: #1e2a5a;
+  --sb-shirt-edge: #141c3d;
+}
+html[data-outfit='plum'] {
+  --sb-shirt: #4a1f4f;
+  --sb-shirt-edge: #351437;
+}
+html[data-outfit='charcoal'] {
+  --sb-shirt: #22262b;
+  --sb-shirt-edge: #14171a;
+}
+html[data-outfit='contrast'] {
+  --sb-shirt: #000000;
+  --sb-shirt-edge: #000000;
+}
+
 html[data-contrast='high'] {
   --sb-canvas: #000000;
   --sb-surface: #0b0b0b;
@@ -86,6 +106,7 @@ html[data-contrast='high'] {
   --sb-focus: #ffee00;
   --sb-shirt: #0b3550;
   --sb-shirt-edge: #0a2a3e;
+  --sb-stage: #050505;
   color-scheme: dark;
 }
 

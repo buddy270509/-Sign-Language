@@ -1,19 +1,20 @@
 {
   "name": "signbridge",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
-  "description": "SignBridge - two-way sign language bridge (Phase 1: expressive fingerspelling avatar)",
+  "description": "SignBridge — two-way sign language bridge (Phase 2: full avatar engine, handshapes, faces, Sign Studio)",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 0.0.0.0",
     "typecheck": "tsc --noEmit",
-    "check:signs": "node scripts/validate-signs.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check:animations": "tsx scripts/check-animations.ts",
     "check:render": "tsx scripts/ssr-smoke.tsx",
-    "check": "npm run typecheck && npm run check:signs && npm run check:text && npm run check:render",
-    "render:avatar": "tsx scripts/render-avatar.tsx",
-    "check:text": "tsx scripts/check-text.ts"
+    "check": "npm run typecheck && npm run check:animations && npm run check:render && npm test",
+    "render:frames": "tsx scripts/render-frames.tsx"
   },
   "dependencies": {
     "react": "^19.3.1",
@@ -23,13 +24,16 @@
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/vite": "^4.3.5",
+    "@testing-library/react": "^16.3.3",
     "@types/node": "^26.6.6",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.2.0",
+    "jsdom": "^31.0.0",
     "tailwindcss": "^4.3.5",
     "tsx": "^4.23.15",
     "typescript": "~5.9.3",
-    "vite": "^7.3.7"
+    "vite": "^7.3.7",
+    "vitest": "^5.1.0"
   }
 }

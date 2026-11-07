@@ -1,64 +1,93 @@
 /**
- * Hand renderer — draws the 21-landmark hand produced by the forward-kinematic rig.
+ * One hand, drawn from the rig's render model.
  *
- * Ordering matters: bones behind the palm are drawn first (darker), the palm is drawn
- * on top, then bones in front of the palm (fingertips curling toward the camera).
- * That is what makes a fist read as a fist instead of a star of fingers.
+ * The drawing reads only `RenderHand` geometry (landmarks, bones, palm outline) — it has no
+ * knowledge of handshapes or joints, which is what keeps the rig swappable.
  */
-import type { HandFrame } from '../../types/sign';
+import type { RenderHand } from '../../types/animation';
+import type { AvatarStyle } from './types';
 
 export interface HandProps {
-  frame: HandFrame;
+  hand: RenderHand;
+  style?: AvatarStyle;
+  /** The hand furthest from the camera is drawn a shade darker and slightly smaller. */
+  tone?: 'near' | 'far';
   showLandmarks?: boolean;
 }
 
-export function Hand({ frame, showLandmarks = false }: HandProps) {
-  const behind = frame.bones.filter((b) => b.depth <= 0);
-  const front = frame.bones.filter((b) => b.depth > 0);
+export function Hand({ hand, style = 'human', tone = 'near', showLandmarks = false }: HandProps) {
+  const skin = tone === 'near' ? 'var(--sb-skin)' : 'var(--sb-skin-shade)';
+  const edge = tone === 'near' ? 'var(--sb-skin-deep)' : 'var(--sb-skin-deep)';
+  const stickColor = tone === 'near' ? 'var(--sb-ink)' : 'var(--sb-ink-soft)';
 
-  const bone = (b: HandFrame['bones'][number], color: string, key: string) => {
-    const a = frame.landmarks[b.a];
-    const c = frame.landmarks[b.b];
-    if (!a || !c) return null;
+  if (style === 'stick') {
     return (
-      <line
-        key={key}
-        x1={a.x}
-        y1={a.y}
-        x2={c.x}
-        y2={c.y}
-        stroke={color}
-        strokeWidth={b.width}
-        strokeLinecap="round"
-      />
+      <g>
+        {hand.bones.map((bone) => {
+          const a = hand.landmarks[bone.a];
+          const b = hand.landmarks[bone.b];
+          if (!a || !b) return null;
+          return (
+            <line
+              key={`${bone.a}-${bone.b}`}
+              x1={a.x}
+              y1={a.y}
+              x2={b.x}
+              y2={b.y}
+              stroke={stickColor}
+              strokeWidth={Math.max(2, bone.width * 0.5)}
+              strokeLinecap="round"
+            />
+          );
+        })}
+        <circle cx={hand.wrist.x} cy={hand.wrist.y} r={4.5} fill="var(--sb-brand)" />
+        {showLandmarks ? <Landmarks hand={hand} /> : null}
+      </g>
     );
-  };
-
-  const knuckles = [5, 9, 13, 17]
-    .map((i) => frame.landmarks[i])
-    .filter((p): p is NonNullable<typeof p> => Boolean(p));
+  }
 
   return (
-    <g filter="url(#sb-hand-shadow)">
-      {behind.map((b, i) => bone(b, 'var(--sb-skin-shade)', `b${i}`))}
-
-      <path d={frame.palmPath} fill="var(--sb-skin)" stroke="var(--sb-skin-shade)" strokeWidth={1.4} />
-      {frame.knuckles.map((k, i) => (
-        <circle key={`k${i}`} cx={k.x} cy={k.y} r={k.r} fill="var(--sb-skin)" stroke="var(--sb-skin-shade)" strokeWidth={0.8} />
+    <g>
+      {/* Shadow under the hand keeps it readable against the shirt. */}
+      <path d={hand.palmPath} fill={edge} opacity={0.18} transform="translate(1.6 2.2)" />
+      <path d={hand.palmPath} fill={skin} stroke={edge} strokeWidth={0.9} strokeLinejoin="round" />
+      {hand.bones.map((bone) => {
+        const a = hand.landmarks[bone.a];
+        const b = hand.landmarks[bone.b];
+        if (!a || !b) return null;
+        return (
+          <line
+            key={`${bone.a}-${bone.b}`}
+            x1={a.x}
+            y1={a.y}
+            x2={b.x}
+            y2={b.y}
+            stroke={skin}
+            strokeWidth={bone.width * 0.92}
+            strokeLinecap="round"
+          />
+        );
+      })}
+      {/* Knuckle hints: small darker dots give the hand volume without clutter. */}
+      {hand.knuckles.map((knuckle, index) => (
+        <circle key={index} cx={knuckle.x} cy={knuckle.y} r={knuckle.r * 0.32} fill={edge} opacity={0.35} />
       ))}
-      {knuckles.map((k, i) => (
-        <circle key={i} cx={k.x} cy={k.y} r={1.3} fill="var(--sb-skin-deep)" opacity={0.22} />
+      {showLandmarks ? <Landmarks hand={hand} /> : null}
+    </g>
+  );
+}
+
+function Landmarks({ hand }: { hand: RenderHand }) {
+  return (
+    <g>
+      {hand.landmarks.map((point, index) => (
+        <g key={index}>
+          <circle cx={point.x} cy={point.y} r={1.7} fill="var(--sb-brand)" opacity={0.9} />
+          <text x={point.x + 2.6} y={point.y - 2} fontSize={4} fill="var(--sb-ink-soft)">
+            {index}
+          </text>
+        </g>
       ))}
-
-      {front.map((b, i) => bone(b, 'var(--sb-skin)', `f${i}`))}
-
-      {showLandmarks &&
-        frame.landmarks.map((p, i) => (
-          <g key={i}>
-            <circle cx={p.x} cy={p.y} r={4.2} fill="none" stroke="var(--sb-brand)" strokeWidth={0.7} opacity={0.35} />
-            <circle cx={p.x} cy={p.y} r={1.7} fill="var(--sb-brand)" />
-          </g>
-        ))}
     </g>
   );
 }

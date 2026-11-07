@@ -1,7 +1,8 @@
 /**
- * App settings: persisted in localStorage, applied to <html> as data attributes so
- * CSS can switch palettes (and the avatar can switch skin tone) without re-rendering
- * the whole tree.
+ * App settings, persisted in localStorage and applied to <html> as data attributes so CSS
+ * can switch the palette, the outfit and reduced-motion without re-rendering the tree.
+ *
+ * Everything here is device-local. There is no account and no upload.
  */
 import {
   createContext,
@@ -14,26 +15,43 @@ import {
 } from 'react';
 import { DEFAULT_LANGUAGE, LANGUAGES } from '../data';
 import { translate, UI_LANGUAGES, type MessageKey, type UiLanguage } from '../i18n/strings';
-import { EXPRESSION_PRESETS, type ExpressionId } from '../core/rig/presets';
+import { EXPRESSIONS } from '../core/rig/face';
+import type { LoopMode } from '../core/animation/queue';
+import type { AvatarStyle, AvatarView } from '../components/avatar/types';
 
 export type SkinTone = 'tone1' | 'tone2' | 'tone3' | 'tone4' | 'tone5';
 export type Contrast = 'default' | 'high';
 export type Handedness = 'right' | 'left';
+export type Outfit = 'teal' | 'navy' | 'plum' | 'charcoal' | 'contrast';
+
+export const OUTFITS: Array<{ id: Outfit; label: string; swatch: string }> = [
+  { id: 'teal', label: 'Teal', swatch: '#12455c' },
+  { id: 'navy', label: 'Navy', swatch: '#1e2a5a' },
+  { id: 'plum', label: 'Plum', swatch: '#4a1f4f' },
+  { id: 'charcoal', label: 'Charcoal', swatch: '#22262b' },
+  { id: 'contrast', label: 'High contrast', swatch: '#000000' },
+];
 
 export interface Settings {
   languageTag: string;
   uiLanguage: UiLanguage;
+  /** `left` mirrors the whole performance, for left-handed signers. */
   handedness: Handedness;
   skinTone: SkinTone;
+  outfit: Outfit;
   contrast: Contrast;
   reducedMotion: boolean;
+  avatarStyle: AvatarStyle;
+  view: AvatarView;
   speed: number;
-  faceZoom: boolean;
+  loop: LoopMode;
+  transitionMs: number;
   showLandmarks: boolean;
-  showExpressionLabels: boolean;
-  loop: boolean;
-  /** `null` = follow the sentence type detected by the text processor. */
-  expression: ExpressionId | null;
+  showLabels: boolean;
+  showFps: boolean;
+  /** Expression layered over every sign ('' = none). */
+  overlayExpression: string;
+  overlayWeight: number;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -41,17 +59,22 @@ export const DEFAULT_SETTINGS: Settings = {
   uiLanguage: 'en',
   handedness: 'right',
   skinTone: 'tone3',
+  outfit: 'teal',
   contrast: 'default',
   reducedMotion: false,
+  avatarStyle: 'human',
+  view: 'full',
   speed: 1,
-  faceZoom: false,
+  loop: 'off',
+  transitionMs: 200,
   showLandmarks: false,
-  showExpressionLabels: true,
-  loop: false,
-  expression: null,
+  showLabels: true,
+  showFps: false,
+  overlayExpression: 'neutral',
+  overlayWeight: 0,
 };
 
-const STORAGE_KEY = 'signbridge.settings.v1';
+const STORAGE_KEY = 'signbridge.settings.v2';
 
 function load(): Settings {
   if (typeof window === 'undefined') return DEFAULT_SETTINGS;
@@ -60,17 +83,21 @@ function load(): Settings {
     if (!raw) return DEFAULT_SETTINGS;
     const parsed = JSON.parse(raw) as Partial<Settings>;
     const merged = { ...DEFAULT_SETTINGS, ...parsed };
-    // Guard against stale or hand-edited storage (a bad language tag or expression
-    // would otherwise leave the avatar with nothing to render).
+    // Guard against stale or hand-edited storage: a bad value would otherwise leave the
+    // app in a state it cannot render.
     if (!LANGUAGES.some((language) => language.tag === merged.languageTag)) {
       merged.languageTag = DEFAULT_LANGUAGE;
     }
-    if (merged.expression && !(merged.expression in EXPRESSION_PRESETS)) {
-      merged.expression = null;
-    }
-    if (!UI_LANGUAGES.some((language) => language.id === merged.uiLanguage)) {
-      merged.uiLanguage = 'en';
-    }
+    if (!UI_LANGUAGES.some((language) => language.id === merged.uiLanguage)) merged.uiLanguage = 'en';
+    if (merged.overlayExpression && !EXPRESSIONS[merged.overlayExpression]) merged.overlayExpression = 'neutral';
+    if (!['off', 'all', 'one'].includes(merged.loop)) merged.loop = 'off';
+    if (!['human', 'stick'].includes(merged.avatarStyle)) merged.avatarStyle = 'human';
+    if (!['full', 'hands', 'face'].includes(merged.view)) merged.view = 'full';
+    if (!['right', 'left'].includes(merged.handedness)) merged.handedness = 'right';
+    if (!OUTFITS.some((outfit) => outfit.id === merged.outfit)) merged.outfit = 'teal';
+    merged.speed = [0.25, 0.5, 1, 1.5, 2].includes(merged.speed) ? merged.speed : 1;
+    merged.transitionMs = Math.min(250, Math.max(150, Number(merged.transitionMs) || 200));
+    merged.overlayWeight = Math.min(1, Math.max(0, Number(merged.overlayWeight) || 0));
     return merged;
   } catch {
     return DEFAULT_SETTINGS;
@@ -93,6 +120,8 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     const root = document.documentElement;
     root.dataset.skin = settings.skinTone;
     root.dataset.contrast = settings.contrast;
+    root.dataset.outfit = settings.outfit;
+    root.dataset.avatarStyle = settings.avatarStyle;
     root.dataset.motion = settings.reducedMotion ? 'reduced' : 'default';
     root.lang = settings.uiLanguage;
     try {

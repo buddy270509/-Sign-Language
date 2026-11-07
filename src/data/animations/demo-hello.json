@@ -1,0 +1,160 @@
+{
+  "id": "demo-hello",
+  "label": "Hello (wave)",
+  "duration_ms": 1600,
+  "tracks": {
+    "rightHand": [
+      {
+        "t": 0.0,
+        "wrist": [
+          0.7,
+          0.6,
+          0.3
+        ],
+        "handshape": "flat",
+        "palm": "forward",
+        "roll": -8,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.18,
+        "wrist": [
+          0.75,
+          0.22,
+          0.35
+        ],
+        "handshape": "open-5",
+        "roll": -14,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.34,
+        "roll": 12,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.5,
+        "roll": -14,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.66,
+        "roll": 12,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.82,
+        "roll": -4,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 1.0,
+        "wrist": [
+          0.7,
+          0.58,
+          0.3
+        ],
+        "handshape": "relaxed",
+        "roll": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "leftHand": [],
+    "face": [
+      {
+        "t": 0.0,
+        "mouthSmile": 0.1,
+        "browRaiseL": 0.12,
+        "browRaiseR": 0.12
+      },
+      {
+        "t": 0.2,
+        "mouthSmile": 0.6,
+        "mouthWidth": 0.65,
+        "browRaiseL": 0.4,
+        "browRaiseR": 0.4,
+        "cheekRaise": 0.5,
+        "eyeOpenL": 0.6,
+        "eyeOpenR": 0.6,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.8,
+        "mouthSmile": 0.55,
+        "browRaiseL": 0.35,
+        "browRaiseR": 0.35,
+        "cheekRaise": 0.45
+      },
+      {
+        "t": 1.0,
+        "mouthSmile": 0.1,
+        "browRaiseL": 0.12,
+        "browRaiseR": 0.12,
+        "cheekRaise": 0.1,
+        "ease": "easeInOut"
+      }
+    ],
+    "head": [
+      {
+        "t": 0.0,
+        "pitch": 0,
+        "roll": 0
+      },
+      {
+        "t": 0.2,
+        "pitch": -4,
+        "roll": 5,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.75,
+        "pitch": -2,
+        "roll": 3
+      },
+      {
+        "t": 1.0,
+        "pitch": 0,
+        "roll": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "body": [
+      {
+        "t": 0.0,
+        "leanForward": 0
+      },
+      {
+        "t": 0.3,
+        "leanForward": 0.12,
+        "ease": "easeOut"
+      },
+      {
+        "t": 1.0,
+        "leanForward": 0,
+        "ease": "easeInOut"
+      }
+    ]
+  },
+  "meta": {
+    "language": "ISL",
+    "description": "An open right hand raised beside the head, waving side to side twice, with a smile and a small head lift. Demo animation \u2014 NOT verified by a deaf signer and not a claim about correct ISL.",
+    "reviewed_by_deaf_signer": false,
+    "demo": true,
+    "channels": [
+      "hands",
+      "arms",
+      "face",
+      "head",
+      "body"
+    ]
+  },
+  "nonManualOverlay": {
+    "expression": "happy",
+    "weight": 0.55,
+    "groups": [
+      "brows",
+      "eyes",
+      "cheeks"
+    ]
+  }
+}

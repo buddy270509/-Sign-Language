@@ -1,158 +1,108 @@
 /**
- * Home: what the app is, what Phase 1 actually delivers (no over-claiming), and the
- * roadmap. The live avatar is the same engine used in Text to Sign.
+ * Home: what this build does today, with a live avatar you can drive immediately.
  */
 import { Link } from 'react-router-dom';
-import { AvatarStage } from '../components/avatar/AvatarStage';
+import { AvatarPlayer } from '../components/avatar/AvatarPlayer';
+import { DEMO_ANIMATIONS, FINGERSPELLING_ANIMATIONS } from '../data/animations';
 import { Icon, type IconName } from '../components/ui/Icon';
-import { useSignPlayer } from '../hooks/useSignPlayer';
 import { useSettings } from '../store/settings';
-import { dictionaryMeta } from '../data';
 
-const FEATURES: Array<{ icon: IconName; title: string; body: string }> = [
-  { icon: 'hand', title: 'home.f1.title', body: 'home.f1.body' },
-  { icon: 'eye', title: 'home.f2.title', body: 'home.f2.body' },
-  { icon: 'sparkle', title: 'home.f3.title', body: 'home.f3.body' },
-  { icon: 'shield', title: 'home.f4.title', body: 'home.f4.body' },
+const FEATURES: Array<{ icon: IconName; title: string; body: string; to: string; cta: string }> = [
+  {
+    icon: 'hand',
+    title: 'Five channels, five controls',
+    body: 'Hands and arms, face, head and body each have their own track with their own timing, so they can move together without fighting.',
+    to: '/demos',
+    cta: 'See the demo motions',
+  },
+  {
+    icon: 'grid',
+    title: `${FINGERSPELLING_ANIMATIONS.length + 35}+ handshapes`,
+    body: 'Every handshape is a set of finger joint angles with anatomical limits, so fingers never bend backwards.',
+    to: '/gallery',
+    cta: 'Open the handshape gallery',
+  },
+  {
+    icon: 'pencil',
+    title: 'Sign Studio',
+    body: 'Author your own animation: place keyframes per track on a timeline, preview live, then export the JSON.',
+    to: '/studio',
+    cta: 'Open Sign Studio',
+  },
 ];
-
-const PHASES: Array<{ n: number; title: string; status: 'done' | 'next' | 'planned' }> = [
-  { n: 1, title: 'Foundation + expressive fingerspelling avatar', status: 'done' },
-  { n: 2, title: 'Full avatar engine (hands, face, head, body)', status: 'next' },
-  { n: 3, title: 'Text-to-Sign v1: 100 words, grammar, short sentences', status: 'planned' },
-  { n: 4, title: 'Camera + landmark pipeline, alphabet recognition', status: 'planned' },
-  { n: 5, title: 'Single-word sign recognition (50–100 signs)', status: 'planned' },
-  { n: 6, title: '3–4 word sentences with facial expressions', status: 'planned' },
-  { n: 7, title: 'Up to 8-word sentences + correction feedback loop', status: 'planned' },
-  { n: 8, title: 'Conversation mode + speech in/out', status: 'planned' },
-  { n: 9, title: 'Learning mode, data collection, offline PWA', status: 'planned' },
-  { n: 10, title: 'Testing with deaf users, accuracy hardening, vocabulary', status: 'planned' },
-];
-
-const NO_SIGNS: never[] = [];
 
 export function HomePage() {
-  const { settings, update, t } = useSettings();
-  const player = useSignPlayer(NO_SIGNS, { expression: 'happy' });
-  const meta = dictionaryMeta(settings.languageTag);
+  const { t } = useSettings();
 
   return (
-    <div className="sb-fade-in flex flex-col gap-8">
-      <section className="grid items-center gap-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
-        <div>
-          <span className="chip mb-4">
-            <Icon name="sparkle" className="h-4 w-4 text-brand" /> Phase 1 · {meta?.languageName ?? 'Indian Sign Language'}
-          </span>
-          <h1 className="text-3xl leading-[1.1] font-extrabold sm:text-4xl">{t('home.title')}</h1>
-          <p className="mt-3 max-w-xl text-lg text-pretty text-ink-soft">{t('home.intro')}</p>
-          <div className="mt-5 flex flex-wrap gap-2.5">
+    <div className="space-y-6">
+      <section className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+        <div className="space-y-4">
+          <p className="chip">
+            <Icon name="sparkle" className="h-4 w-4" /> Phase 2 · Full avatar engine
+          </p>
+          <h1 className="text-3xl font-extrabold tracking-tight text-pretty sm:text-4xl">
+            {t('home.title')}
+          </h1>
+          <p className="max-w-prose text-base text-ink-soft">{t('home.intro')}</p>
+
+          <div className="flex flex-wrap gap-2">
             <Link to="/text-to-sign" className="btn btn-primary btn-lg">
-              <Icon name="hand" className="h-5 w-5" />
-              {t('home.cta.try')}
+              <Icon name="hand" /> {t('home.cta.try')}
             </Link>
-            <Link to="/camera" className="btn btn-lg">
-              <Icon name="camera" className="h-5 w-5" />
-              {t('home.cta.camera')}
+            <Link to="/demos" className="btn btn-lg">
+              <Icon name="layers" /> Demo motions
             </Link>
           </div>
-          <p className="mt-4 flex items-start gap-2 rounded-2xl bg-accent-soft px-3.5 py-3 text-sm text-pretty text-accent">
-            <Icon name="warning" className="mt-0.5 h-4.5 w-4.5 shrink-0" />
-            {t('disclaimer.short')}
-          </p>
-        </div>
 
-        <div className="mx-auto w-full max-w-sm">
-          <AvatarStage
-            frame={player.frame}
-            label="Sign language avatar at rest, smiling"
-            zoom={settings.faceZoom}
-            onToggleZoom={() => update({ faceZoom: !settings.faceZoom })}
-            still={settings.reducedMotion}
-            caption={<p className="text-sm font-medium">Live avatar · 21 landmarks per hand</p>}
-          />
-          <p className="mt-2 text-center text-sm text-ink-soft">
-            Every hand is a real 21-point rig, not an image sequence.
-          </p>
-        </div>
-      </section>
-
-      <section className="card">
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <h2 className="text-xl font-extrabold">{t('home.phaseTitle')}</h2>
-          <span className="chip">{settings.languageTag.toUpperCase()} · draft dictionary</span>
-        </div>
-        <p className="mt-2 text-pretty text-ink-soft">{t('home.phaseBody')}</p>
-        <ul className="mt-4 grid gap-2 sm:grid-cols-2">
-          {[
-            'Fingerspelling A–Z and 0–9 with a visible face',
-            'Neutral, happy, yes/no question, wh-question and negative expressions',
-            'Head nod, shake and tilt; torso lean; speed control',
-            'Face zoom, 21-landmark overlay, high contrast, English/Hindi/Marathi shell',
-          ].map((item) => (
-            <li key={item} className="flex items-start gap-2 text-sm">
-              <Icon name="check" className="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" />
-              {item}
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section>
-        <h2 className="text-xl font-extrabold">{t('home.expressiveTitle')}</h2>
-        <div className="mt-3 grid gap-3 sm:grid-cols-2">
-          {FEATURES.map((feature) => (
-            <article key={feature.title} className="card-flat">
-              <span className="grid h-10 w-10 place-items-center rounded-xl bg-brand-soft text-brand">
-                <Icon name={feature.icon} className="h-5 w-5" />
+          <div className="card-flat text-sm text-ink-soft">
+            <p className="flex items-start gap-2">
+              <Icon name="info" className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+              <span>
+                This build animates <strong className="text-ink">fingerspelling</strong> and{' '}
+                <strong className="text-ink">10 demo motions</strong>. It has no dictionary of whole-word signs
+                and no grammar yet — that is Phase 3. Every demo clip is marked “not verified by a deaf signer”.
               </span>
-              <h3 className="mt-2.5 font-bold">{t(feature.title as 'home.f1.title')}</h3>
-              <p className="mt-1 text-sm text-pretty text-ink-soft">{t(feature.body as 'home.f1.body')}</p>
-            </article>
-          ))}
+            </p>
+          </div>
         </div>
+
+        <AvatarPlayer animations={DEMO_ANIMATIONS} showScrubber={false} />
       </section>
 
-      <section className="card">
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <h2 className="text-xl font-extrabold">{t('home.roadmapTitle')}</h2>
-          <Link to="/settings" className="link text-sm">
-            About this build
+      <section className="grid gap-4 sm:grid-cols-3">
+        {FEATURES.map((feature) => (
+          <Link key={feature.to} to={feature.to} className="card group flex flex-col gap-2 no-underline">
+            <span className="grid h-10 w-10 place-items-center rounded-xl bg-brand-soft text-brand">
+              <Icon name={feature.icon} />
+            </span>
+            <h2 className="text-base font-bold text-ink">{feature.title}</h2>
+            <p className="flex-1 text-sm text-ink-soft">{feature.body}</p>
+            <span className="inline-flex items-center gap-1 text-sm font-semibold text-brand">
+              {feature.cta} <Icon name="arrowRight" className="h-4 w-4" />
+            </span>
           </Link>
-        </div>
-        <p className="mt-1 text-sm text-ink-soft">{t('home.roadmapBody')}</p>
-        <ol className="mt-3 divide-y divide-line">
-          {PHASES.map((phase) => (
-            <li key={phase.n} className="flex items-center gap-3 py-2.5">
-              <span
-                className={`grid h-8 w-8 shrink-0 place-items-center rounded-lg text-sm font-bold ${
-                  phase.status === 'done'
-                    ? 'bg-brand text-[color:var(--sb-brand-ink)]'
-                    : phase.status === 'next'
-                      ? 'bg-accent-soft text-accent'
-                      : 'bg-surface-2 text-ink-soft'
-                }`}
-              >
-                {phase.n}
-              </span>
-              <span className={`flex-1 text-sm ${phase.status === 'done' ? 'font-semibold' : 'text-ink-soft'}`}>
-                {phase.title}
-              </span>
-              {phase.status === 'done' ? (
-                <span className="chip chip-active text-xs">this build</span>
-              ) : phase.status === 'next' ? (
-                <span className="chip text-xs">next</span>
-              ) : null}
-            </li>
-          ))}
-        </ol>
+        ))}
       </section>
 
-      <section className="card-flat flex items-start gap-3">
-        <Icon name="info" className="mt-0.5 h-5 w-5 shrink-0 text-brand" />
-        <div>
-          <h2 className="font-bold">{t('disclaimer.title')}</h2>
-          <p className="mt-1 text-sm text-pretty text-ink-soft">{t('disclaimer.short')}</p>
-        </div>
+      <section className="card">
+        <h2 className="text-lg font-bold">How the engine is put together</h2>
+        <ol className="mt-3 space-y-2 text-sm text-ink-soft">
+          <li>
+            <strong className="text-ink">Data → rig → renderer.</strong> Animations are JSON keyframes. The rig turns
+            them into joint angles with limits enforced, and only then does anything get drawn. Swapping SVG for
+            Three.js later touches just the renderer.
+          </li>
+          <li>
+            <strong className="text-ink">21 landmarks per hand.</strong> Hands use the same landmark ordering as
+            MediaPipe Hands, so the avatar and the future camera pipeline speak the same language.
+          </li>
+          <li>
+            <strong className="text-ink">Overlays, not overrides.</strong> A sentence-level emotion is layered over a
+            sign and is not allowed to touch the mouth by default — signers change their mouth shape as part of the
+            sign.
+          </li>
+        </ol>
       </section>
     </div>
   );

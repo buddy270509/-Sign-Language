@@ -4,13 +4,10 @@
  * and framing, while making it impossible to mistake this build for a working
  * recogniser. No frames leave the browser.
  */
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Icon } from '../components/ui/Icon';
-import { Hand } from '../components/avatar/Hand';
-import { buildHandFrame } from '../core/rig/handRig';
-import { BODY } from '../core/rig/body';
+import { HandPreview } from '../components/avatar/HandPreview';
 import { useSettings } from '../store/settings';
-import { SIGN_HAND_BASE } from '../core/rig/presets';
 
 const PIPELINE = [
   { title: 'Camera frames', body: 'getUserMedia → video → canvas, entirely on-device.' },
@@ -38,12 +35,6 @@ export function CameraPage() {
   const [state, setState] = useState<CameraState>('idle');
   const [error, setError] = useState<string | null>(null);
   const [consent, setConsent] = useState(false);
-
-  // A real 21-point hand, rendered by the same rig the avatar uses.
-  const demoHand = useMemo(
-    () => buildHandFrame({ ...SIGN_HAND_BASE, position: { x: 0.5, y: 0.5 } }, BODY.palmWidth, { x: 90, y: 150 }),
-    [],
-  );
 
   const stop = () => {
     streamRef.current?.getTracks().forEach((track) => track.stop());
@@ -217,9 +208,21 @@ export function CameraPage() {
               <h2 className="font-bold">What the model will see</h2>
               <span className="chip text-xs">21 landmarks</span>
             </div>
-            <svg viewBox="0 0 180 200" className="mx-auto mt-2 h-44 w-full max-w-[220px]" role="img" aria-label="A hand labelled with 21 landmark points">
-              <Hand frame={demoHand} showLandmarks />
-            </svg>
+            <div className="mx-auto mt-2 h-44 w-full max-w-[220px]">
+              <HandPreview
+                hand={{
+                  wrist: [0.5, 0.5, 0.4],
+                  handshape: 'open-5',
+                  palm: 'forward',
+                  palmYaw: 0,
+                  palmPitch: 0,
+                  roll: 0,
+                  scale: 1.15,
+                }}
+                className="h-full w-full"
+                showLandmarks
+              />
+            </div>
             <p className="text-xs text-ink-soft">
               Each frame becomes 21 points per hand plus face and pose landmarks — no video, no photos, no faces
               stored.

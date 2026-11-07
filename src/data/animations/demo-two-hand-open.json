@@ -1,0 +1,130 @@
+{
+  "id": "demo-two-hand-open",
+  "label": "Two hands opening",
+  "duration_ms": 1500,
+  "tracks": {
+    "rightHand": [
+      {
+        "t": 0.0,
+        "wrist": [
+          0.56,
+          0.58,
+          0.3
+        ],
+        "handshape": "fist",
+        "palm": "forward",
+        "roll": 0,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.45,
+        "wrist": [
+          0.75,
+          0.5,
+          0.4
+        ],
+        "handshape": "open-5",
+        "palm": "up",
+        "roll": 6,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.7,
+        "roll": 2,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 1.0,
+        "wrist": [
+          0.6,
+          0.58,
+          0.3
+        ],
+        "handshape": "fist",
+        "palm": "forward",
+        "roll": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "leftHand": [
+      {
+        "t": 0.0,
+        "wrist": [
+          0.44,
+          0.58,
+          0.3
+        ],
+        "handshape": "fist",
+        "palm": "forward",
+        "roll": 0,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.45,
+        "wrist": [
+          0.25,
+          0.5,
+          0.4
+        ],
+        "handshape": "open-5",
+        "palm": "up",
+        "roll": -6,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.7,
+        "roll": -2,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 1.0,
+        "wrist": [
+          0.4,
+          0.58,
+          0.3
+        ],
+        "handshape": "fist",
+        "palm": "forward",
+        "roll": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "face": [
+      {
+        "t": 0.0,
+        "mouthOpen": 0.1,
+        "browRaiseL": 0.2,
+        "browRaiseR": 0.2
+      },
+      {
+        "t": 0.45,
+        "mouthOpen": 0.35,
+        "mouthWidth": 0.6,
+        "browRaiseL": 0.55,
+        "browRaiseR": 0.55,
+        "ease": "easeOut"
+      },
+      {
+        "t": 1.0,
+        "mouthOpen": 0.1,
+        "browRaiseL": 0.2,
+        "browRaiseR": 0.2,
+        "ease": "easeInOut"
+      }
+    ],
+    "head": [],
+    "body": []
+  },
+  "meta": {
+    "language": "ISL",
+    "description": "Both hands close together at the chest, then open outwards with the palms turning up. Demo animation \u2014 NOT verified by a deaf signer and not a claim about correct ISL.",
+    "reviewed_by_deaf_signer": false,
+    "demo": true,
+    "channels": [
+      "hands",
+      "arms",
+      "two-hands",
+      "face"
+    ]
+  }
+}

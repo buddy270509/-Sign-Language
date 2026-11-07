@@ -1,0 +1,149 @@
+{
+  "id": "demo-question",
+  "label": "Question marker",
+  "duration_ms": 1400,
+  "tracks": {
+    "rightHand": [
+      {
+        "t": 0.0,
+        "wrist": [
+          0.62,
+          0.62,
+          0.3
+        ],
+        "handshape": "flat",
+        "palm": "up",
+        "roll": 0,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.4,
+        "wrist": [
+          0.7,
+          0.56,
+          0.35
+        ],
+        "roll": 6,
+        "ease": "easeOut"
+      },
+      {
+        "t": 1.0,
+        "wrist": [
+          0.62,
+          0.62,
+          0.3
+        ],
+        "roll": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "leftHand": [
+      {
+        "t": 0.0,
+        "wrist": [
+          0.38,
+          0.62,
+          0.3
+        ],
+        "handshape": "flat",
+        "palm": "up",
+        "roll": 0,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.4,
+        "wrist": [
+          0.3,
+          0.56,
+          0.35
+        ],
+        "roll": -6,
+        "ease": "easeOut"
+      },
+      {
+        "t": 1.0,
+        "wrist": [
+          0.38,
+          0.62,
+          0.3
+        ],
+        "roll": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "face": [
+      {
+        "t": 0.0,
+        "browRaiseL": 0.15,
+        "browRaiseR": 0.15,
+        "eyeOpenL": 0.6,
+        "eyeOpenR": 0.6
+      },
+      {
+        "t": 0.35,
+        "browRaiseL": 0.9,
+        "browRaiseR": 0.9,
+        "eyeOpenL": 0.85,
+        "eyeOpenR": 0.85,
+        "mouthOpen": 0.2,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.85,
+        "browRaiseL": 0.85,
+        "browRaiseR": 0.85,
+        "eyeOpenL": 0.8,
+        "eyeOpenR": 0.8
+      },
+      {
+        "t": 1.0,
+        "browRaiseL": 0.15,
+        "browRaiseR": 0.15,
+        "eyeOpenL": 0.6,
+        "eyeOpenR": 0.6,
+        "mouthOpen": 0.08,
+        "ease": "easeInOut"
+      }
+    ],
+    "head": [
+      {
+        "t": 0.0,
+        "pitch": 0,
+        "forward": 0
+      },
+      {
+        "t": 0.35,
+        "pitch": 7,
+        "forward": 0.3,
+        "ease": "easeOut"
+      },
+      {
+        "t": 1.0,
+        "pitch": 0,
+        "forward": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "body": []
+  },
+  "meta": {
+    "language": "ISL",
+    "description": "Eyebrows raised through the whole sign, head slightly forward, both palms turning up. Demo animation \u2014 NOT verified by a deaf signer and not a claim about correct ISL.",
+    "reviewed_by_deaf_signer": false,
+    "demo": true,
+    "channels": [
+      "face",
+      "head",
+      "hands",
+      "two-hands"
+    ]
+  },
+  "nonManualOverlay": {
+    "expression": "yesNoQuestion",
+    "weight": 0.7,
+    "groups": [
+      "brows",
+      "eyes"
+    ]
+  }
+}

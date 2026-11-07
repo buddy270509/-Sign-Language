@@ -13,14 +13,20 @@ import { AppShell } from '../src/components/layout/AppShell';
 import { SettingsProvider } from '../src/store/settings';
 import { HomePage } from '../src/pages/HomePage';
 import { TextToSignPage } from '../src/pages/TextToSignPage';
+import { DemosPage } from '../src/pages/DemosPage';
+import { GalleryPage } from '../src/pages/GalleryPage';
+import { StudioPage } from '../src/pages/StudioPage';
 import { CameraPage } from '../src/pages/CameraPage';
 import { SettingsPage } from '../src/pages/SettingsPage';
 
 const routes = [
   { path: '/', element: <HomePage />, expect: ['SignBridge', 'Communication should flow both ways'] },
-  { path: '/text-to-sign', element: <TextToSignPage />, expect: ['Text to Sign', 'Sign sequence', 'Now signing'] },
+  { path: '/text-to-sign', element: <TextToSignPage />, expect: ['Text to Sign', 'What should the avatar fingerspell?'] },
+  { path: '/demos', element: <DemosPage />, expect: ['Demo animations', 'not verified by a deaf signer'] },
+  { path: '/gallery', element: <GalleryPage />, expect: ['Handshape gallery', 'Flat hand'] },
+  { path: '/studio', element: <StudioPage />, expect: ['Sign Studio', 'Timeline', 'Export'] },
   { path: '/camera', element: <CameraPage />, expect: ['Sign to Text', 'Lighting and framing tips'] },
-  { path: '/settings', element: <SettingsPage />, expect: ['Settings', 'Privacy and data'] },
+  { path: '/settings', element: <SettingsPage />, expect: ['Settings', 'Privacy and quality'] },
 ];
 
 let failures = 0;

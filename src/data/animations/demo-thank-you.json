@@ -1,0 +1,123 @@
+{
+  "id": "demo-thank-you",
+  "label": "Thank you (chin outward)",
+  "duration_ms": 1500,
+  "tracks": {
+    "rightHand": [
+      {
+        "t": 0.0,
+        "wrist": [
+          0.5,
+          0.29,
+          0.45
+        ],
+        "handshape": "flat",
+        "palm": "back",
+        "roll": -18,
+        "ease": "easeOut"
+      },
+      {
+        "t": 0.35,
+        "wrist": [
+          0.51,
+          0.27,
+          0.5
+        ],
+        "palm": "back",
+        "roll": -22,
+        "ease": "easeInOut"
+      },
+      {
+        "t": 0.72,
+        "wrist": [
+          0.73,
+          0.46,
+          0.35
+        ],
+        "handshape": "open-5",
+        "palm": "up",
+        "roll": -4,
+        "ease": "easeOut"
+      },
+      {
+        "t": 1.0,
+        "wrist": [
+          0.66,
+          0.58,
+          0.3
+        ],
+        "handshape": "relaxed",
+        "palm": "forward",
+        "roll": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "leftHand": [],
+    "face": [
+      {
+        "t": 0.0,
+        "mouthSmile": 0.2,
+        "browRaiseL": 0.2,
+        "browRaiseR": 0.2
+      },
+      {
+        "t": 0.45,
+        "mouthSmile": 0.8,
+        "mouthWidth": 0.7,
+        "cheekRaise": 0.7,
+        "browRaiseL": 0.45,
+        "browRaiseR": 0.45,
+        "eyeOpenL": 0.55,
+        "eyeOpenR": 0.55,
+        "ease": "easeOut"
+      },
+      {
+        "t": 1.0,
+        "mouthSmile": 0.2,
+        "browRaiseL": 0.2,
+        "browRaiseR": 0.2,
+        "cheekRaise": 0.1,
+        "ease": "easeInOut"
+      }
+    ],
+    "head": [
+      {
+        "t": 0.0,
+        "pitch": 4,
+        "yaw": 0
+      },
+      {
+        "t": 0.45,
+        "pitch": -2,
+        "yaw": 6,
+        "ease": "easeOut"
+      },
+      {
+        "t": 1.0,
+        "pitch": 0,
+        "yaw": 0,
+        "ease": "easeInOut"
+      }
+    ],
+    "body": []
+  },
+  "meta": {
+    "language": "ISL",
+    "description": "Fingertips at the chin, then the flat hand moves forward and down with a warm smile. Demo animation \u2014 NOT verified by a deaf signer and not a claim about correct ISL.",
+    "reviewed_by_deaf_signer": false,
+    "demo": true,
+    "channels": [
+      "hands",
+      "face",
+      "head"
+    ]
+  },
+  "nonManualOverlay": {
+    "expression": "happy",
+    "weight": 0.5,
+    "groups": [
+      "cheeks",
+      "eyes"
+    ]
+  }
+}
