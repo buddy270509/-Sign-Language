@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SignBridge">
+  <rect width="64" height="64" rx="14" fill="#0f172a" />
+  <path d="M14 40c0-6 5-10 10-10h6V18a3 3 0 0 1 6 0v10h2V15a3 3 0 0 1 6 0v13h2V20a3 3 0 0 1 6 0v20c0 7-5 12-13 12h-6c-6 0-9-3-13-8z" fill="#f9c74f" />
+  <circle cx="46" cy="13" r="4" fill="#4cc9f0" />
+</svg>

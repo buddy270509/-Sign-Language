@@ -1,0 +1,14 @@
+{
+  "name": "SignBridge — sign language bridge",
+  "short_name": "SignBridge",
+  "description": "Two-way communication between sign language and text. On-device, private by design.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f5f7fb",
+  "theme_color": "#0f172a",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

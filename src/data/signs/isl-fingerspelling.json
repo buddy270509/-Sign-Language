@@ -1,0 +1,2722 @@
+{
+  "meta": {
+    "languageTag": "isl",
+    "languageName": "Indian Sign Language",
+    "version": "0.1.0-phase1",
+    "updated": "2026-11-07",
+    "reviewStatus": "draft",
+    "reviewer": null,
+    "source": "Authored for SignBridge Phase 1 from published one-handed manual alphabet references. Numerals are an ASL-style reference set.",
+    "notes": "DRAFT DATA. Every handshape must be reviewed by a fluent deaf ISL signer before it is marked supported (see docs/sign-format.md). Numerals: ISL handshapes for 6-9 differ from the reference set used here and must be replaced after review."
+  },
+  "signs": [
+    {
+      "id": "isl-fs-a",
+      "gloss": "A",
+      "displayLabel": "A",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter A",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Closed fist with the thumb resting upright against the side of the index finger",
+      "location": "neutral-space",
+      "movement": "Static hold with a small settle",
+      "palmOrientation": "Palm faces inward, toward the body",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -20,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 1,
+            "middle": 1,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.12,
+            "spread": 0.32
+          },
+          "spread": 0.05,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-b",
+      "gloss": "B",
+      "displayLabel": "B",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter B",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Flat hand, four fingers straight and together, thumb folded across the palm",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -35,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.02,
+            "middle": 0.02,
+            "ring": 0.02,
+            "pinky": 0.02
+          },
+          "thumb": {
+            "curl": 0.5,
+            "spread": 0.12
+          },
+          "spread": 0.0,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-c",
+      "gloss": "C",
+      "displayLabel": "C",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter C",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Hand curved into a C: fingers and thumb rounded, a clear gap between them",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the signer's left (profile view) so the C curve is visible",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": -6,
+            "yaw": -66,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.5,
+            "middle": 0.5,
+            "ring": 0.5,
+            "pinky": 0.5
+          },
+          "thumb": {
+            "curl": 0.45,
+            "spread": 0.55
+          },
+          "spread": 0.18,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-d",
+      "gloss": "D",
+      "displayLabel": "D",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter D",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Index finger up; middle, ring and little fingers curled to meet the thumb",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.02,
+            "middle": 0.85,
+            "ring": 0.9,
+            "pinky": 0.9
+          },
+          "thumb": {
+            "curl": 0.55,
+            "spread": 0.55
+          },
+          "spread": 0.2,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-e",
+      "gloss": "E",
+      "displayLabel": "E",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter E",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Fingers bent at the knuckles with the tips resting on the thumb",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -44,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.78,
+            "middle": 0.78,
+            "ring": 0.78,
+            "pinky": 0.78
+          },
+          "thumb": {
+            "curl": 0.3,
+            "spread": 0.18
+          },
+          "spread": 0.02,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-f",
+      "gloss": "F",
+      "displayLabel": "F",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter F",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Index finger and thumb form a circle; other three fingers extended",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.85,
+            "middle": 0.02,
+            "ring": 0.02,
+            "pinky": 0.02
+          },
+          "thumb": {
+            "curl": 0.75,
+            "spread": 0.6
+          },
+          "spread": 0.25,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-g",
+      "gloss": "G",
+      "displayLabel": "G",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter G",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Index finger and thumb extended parallel, pointing forward and slightly down",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing sideways",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": -25,
+            "yaw": -70,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.05,
+            "middle": 1,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.05,
+            "spread": 0.85
+          },
+          "spread": 0.1,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-h",
+      "gloss": "H",
+      "displayLabel": "H",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter H",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Index and middle fingers extended together, pointing sideways",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing down",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": -72,
+            "yaw": -80,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0,
+            "middle": 0,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.2,
+            "spread": 0.7
+          },
+          "spread": 0.05,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-i",
+      "gloss": "I",
+      "displayLabel": "I",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter I",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Little finger extended upward from a closed fist",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing sideways",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -20,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 1,
+            "middle": 1,
+            "ring": 1,
+            "pinky": 0.02
+          },
+          "thumb": {
+            "curl": 0.35,
+            "spread": 0.28
+          },
+          "spread": 0.05,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-j",
+      "gloss": "J",
+      "displayLabel": "J",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter J",
+      "durationMs": 900,
+      "reviewStatus": "draft",
+      "handshape": "Little finger extended (the I handshape) tracing a J in the air",
+      "location": "neutral-space",
+      "movement": "The little finger draws a J: down, then hooks to the left",
+      "palmOrientation": "Palm facing sideways",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -20,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 1,
+            "middle": 1,
+            "ring": 1,
+            "pinky": 0.02
+          },
+          "thumb": {
+            "curl": 0.35,
+            "spread": 0.28
+          },
+          "spread": 0.05,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.68,
+              "y": 0.59
+            }
+          }
+        },
+        {
+          "t": 0.35,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.7
+            }
+          },
+          "ease": "easeInOut"
+        },
+        {
+          "t": 0.75,
+          "right": {
+            "position": {
+              "x": 0.6,
+              "y": 0.72
+            }
+          },
+          "ease": "easeOut"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.59,
+              "y": 0.71
+            }
+          },
+          "ease": "easeOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-k",
+      "gloss": "K",
+      "displayLabel": "K",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter K",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Index and middle fingers up in a V, thumb forward between them",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.02,
+            "middle": 0.02,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.08,
+            "spread": 0.62
+          },
+          "spread": 0.2,
+          "scale": 1,
+          "fingerSpread": {
+            "index": -0.2,
+            "middle": 0.35
+          }
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-l",
+      "gloss": "L",
+      "displayLabel": "L",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter L",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Index finger up and thumb out to the side, forming an L",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": -8,
+            "yaw": -15,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.02,
+            "middle": 1,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.02,
+            "spread": 0.95
+          },
+          "spread": 0.05,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-m",
+      "gloss": "M",
+      "displayLabel": "M",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter M",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Three fingers folded over the thumb tucked beneath them",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing down",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -22,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 1,
+            "middle": 1,
+            "ring": 1,
+            "pinky": 0.92
+          },
+          "thumb": {
+            "curl": 0.15,
+            "spread": 0.03
+          },
+          "spread": 0.02,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ],
+      "notes": "Thumb tucked under the fingers. In 2D the thumb sits behind the curled fingers, so M/N/A/S/T read very similarly — flagged for signer review."
+    },
+    {
+      "id": "isl-fs-n",
+      "gloss": "N",
+      "displayLabel": "N",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter N",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Two fingers folded over the thumb tucked beneath them",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing down",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -22,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 1,
+            "middle": 1,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.08,
+            "spread": 0.03
+          },
+          "spread": 0.02,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ],
+      "notes": "Thumb tucked under the fingers. In 2D the thumb sits behind the curled fingers, so M/N/A/S/T read very similarly — flagged for signer review."
+    },
+    {
+      "id": "isl-fs-o",
+      "gloss": "O",
+      "displayLabel": "O",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter O",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Fingers and thumb curved to form a closed O",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the signer's left (profile view) so the O is visible",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": -4,
+            "yaw": -58,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.62,
+            "middle": 0.62,
+            "ring": 0.62,
+            "pinky": 0.62
+          },
+          "thumb": {
+            "curl": 0.6,
+            "spread": 0.72
+          },
+          "spread": 0.1,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-p",
+      "gloss": "P",
+      "displayLabel": "P",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter P",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "The K handshape rotated so the fingers point down",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing down",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.59
+          },
+          "orientation": {
+            "roll": -120,
+            "yaw": -40,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.02,
+            "middle": 0.02,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.05,
+            "spread": 0.6
+          },
+          "spread": 0.2,
+          "scale": 1,
+          "fingerSpread": {
+            "index": -0.2,
+            "middle": 0.35
+          }
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.602
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.59
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.586
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-q",
+      "gloss": "Q",
+      "displayLabel": "Q",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter Q",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "The G handshape rotated so index and thumb point down",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing sideways",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.59
+          },
+          "orientation": {
+            "roll": -120,
+            "yaw": -60,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.05,
+            "middle": 1,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.05,
+            "spread": 0.85
+          },
+          "spread": 0.1,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.602
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.59
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.586
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-r",
+      "gloss": "R",
+      "displayLabel": "R",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter R",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Index and middle fingers crossed",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.02,
+            "middle": 0.05,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.4,
+            "spread": 0.2
+          },
+          "spread": 0.05,
+          "scale": 1,
+          "fingerSpread": {
+            "index": 0.5,
+            "middle": -0.5
+          }
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-s",
+      "gloss": "S",
+      "displayLabel": "S",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter S",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Closed fist with the thumb laid across the front of the fingers",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing sideways",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -20,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 1,
+            "middle": 1,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.5,
+            "spread": 0.1
+          },
+          "spread": 0.02,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-t",
+      "gloss": "T",
+      "displayLabel": "T",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter T",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Fist with the thumb pushed up between the index and middle fingers",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing sideways",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -20,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 1,
+            "middle": 1,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.05,
+            "spread": 0.25
+          },
+          "spread": 0.02,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-u",
+      "gloss": "U",
+      "displayLabel": "U",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter U",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Index and middle fingers up, held together",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0,
+            "middle": 0,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.35,
+            "spread": 0.15
+          },
+          "spread": 0.0,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-v",
+      "gloss": "V",
+      "displayLabel": "V",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter V",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Index and middle fingers up and spread apart",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0,
+            "middle": 0,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.45,
+            "spread": 0.18
+          },
+          "spread": 0.5,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-w",
+      "gloss": "W",
+      "displayLabel": "W",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter W",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Index, middle and ring fingers up and spread",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0,
+            "middle": 0,
+            "ring": 0,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.45,
+            "spread": 0.2
+          },
+          "spread": 0.55,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-x",
+      "gloss": "X",
+      "displayLabel": "X",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter X",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Index finger hooked, the rest closed",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing sideways",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -25,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.6,
+            "middle": 1,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.25,
+            "spread": 0.25
+          },
+          "spread": 0.05,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-y",
+      "gloss": "Y",
+      "displayLabel": "Y",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter Y",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Thumb and little finger extended, other fingers closed",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -25,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 1,
+            "middle": 1,
+            "ring": 1,
+            "pinky": 0.02
+          },
+          "thumb": {
+            "curl": 0.02,
+            "spread": 0.98
+          },
+          "spread": 0.05,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-z",
+      "gloss": "Z",
+      "displayLabel": "Z",
+      "kind": "fingerspelling",
+      "languageTag": "isl",
+      "english": "letter Z",
+      "durationMs": 900,
+      "reviewStatus": "draft",
+      "handshape": "Index finger extended, tracing a Z in the air",
+      "location": "neutral-space",
+      "movement": "The index finger draws a Z: across, diagonally back, then across again",
+      "palmOrientation": "Palm facing sideways",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -40,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.05,
+            "middle": 1,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.4,
+            "spread": 0.2
+          },
+          "spread": 0.05,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.58,
+              "y": 0.61
+            }
+          }
+        },
+        {
+          "t": 0.33,
+          "right": {
+            "position": {
+              "x": 0.72,
+              "y": 0.61
+            }
+          },
+          "ease": "linear"
+        },
+        {
+          "t": 0.66,
+          "right": {
+            "position": {
+              "x": 0.58,
+              "y": 0.69
+            }
+          },
+          "ease": "linear"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.72,
+              "y": 0.7
+            }
+          },
+          "ease": "easeOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-0",
+      "gloss": "0",
+      "displayLabel": "0",
+      "kind": "number",
+      "languageTag": "isl",
+      "english": "number 0",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Closed O handshape",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing sideways",
+      "notes": "ASL-style reference numerals — pending Indian Sign Language review; ISL number signs must be confirmed by a deaf signer before release",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -25,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.62,
+            "middle": 0.62,
+            "ring": 0.62,
+            "pinky": 0.62
+          },
+          "thumb": {
+            "curl": 0.6,
+            "spread": 0.72
+          },
+          "spread": 0.1,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-1",
+      "gloss": "1",
+      "displayLabel": "1",
+      "kind": "number",
+      "languageTag": "isl",
+      "english": "number 1",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Index finger extended",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing inward",
+      "notes": "ASL-style reference numerals — pending Indian Sign Language review; ISL number signs must be confirmed by a deaf signer before release",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.02,
+            "middle": 1,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.35,
+            "spread": 0.2
+          },
+          "spread": 0.05,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-2",
+      "gloss": "2",
+      "displayLabel": "2",
+      "kind": "number",
+      "languageTag": "isl",
+      "english": "number 2",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Index and middle fingers spread",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing inward",
+      "notes": "ASL-style reference numerals — pending Indian Sign Language review; ISL number signs must be confirmed by a deaf signer before release",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0,
+            "middle": 0,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.45,
+            "spread": 0.18
+          },
+          "spread": 0.5,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-3",
+      "gloss": "3",
+      "displayLabel": "3",
+      "kind": "number",
+      "languageTag": "isl",
+      "english": "number 3",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Thumb, index and middle fingers extended",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing inward",
+      "notes": "ASL-style reference numerals — pending Indian Sign Language review; ISL number signs must be confirmed by a deaf signer before release",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0,
+            "middle": 0,
+            "ring": 1,
+            "pinky": 1
+          },
+          "thumb": {
+            "curl": 0.02,
+            "spread": 0.92
+          },
+          "spread": 0.15,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-4",
+      "gloss": "4",
+      "displayLabel": "4",
+      "kind": "number",
+      "languageTag": "isl",
+      "english": "number 4",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Four fingers up, thumb folded across the palm",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing inward",
+      "notes": "ASL-style reference numerals — pending Indian Sign Language review; ISL number signs must be confirmed by a deaf signer before release",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.02,
+            "middle": 0.02,
+            "ring": 0.02,
+            "pinky": 0.02
+          },
+          "thumb": {
+            "curl": 0.5,
+            "spread": 0.08
+          },
+          "spread": 0.05,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-5",
+      "gloss": "5",
+      "displayLabel": "5",
+      "kind": "number",
+      "languageTag": "isl",
+      "english": "number 5",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "All five fingers extended and spread",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "notes": "ASL-style reference numerals — pending Indian Sign Language review; ISL number signs must be confirmed by a deaf signer before release",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.02,
+            "middle": 0.02,
+            "ring": 0.02,
+            "pinky": 0.02
+          },
+          "thumb": {
+            "curl": 0.02,
+            "spread": 0.95
+          },
+          "spread": 0.5,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-6",
+      "gloss": "6",
+      "displayLabel": "6",
+      "kind": "number",
+      "languageTag": "isl",
+      "english": "number 6",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Little finger touches the thumb, others extended",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "notes": "ASL-style reference numerals — pending Indian Sign Language review; ISL number signs must be confirmed by a deaf signer before release",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.02,
+            "middle": 0.02,
+            "ring": 0.02,
+            "pinky": 0.8
+          },
+          "thumb": {
+            "curl": 0.72,
+            "spread": 0.72
+          },
+          "spread": 0.15,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-7",
+      "gloss": "7",
+      "displayLabel": "7",
+      "kind": "number",
+      "languageTag": "isl",
+      "english": "number 7",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Ring finger touches the thumb, others extended",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "notes": "ASL-style reference numerals — pending Indian Sign Language review; ISL number signs must be confirmed by a deaf signer before release",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.02,
+            "middle": 0.02,
+            "ring": 0.8,
+            "pinky": 0.02
+          },
+          "thumb": {
+            "curl": 0.72,
+            "spread": 0.72
+          },
+          "spread": 0.15,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-8",
+      "gloss": "8",
+      "displayLabel": "8",
+      "kind": "number",
+      "languageTag": "isl",
+      "english": "number 8",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Middle finger touches the thumb, others extended",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "notes": "ASL-style reference numerals — pending Indian Sign Language review; ISL number signs must be confirmed by a deaf signer before release",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.02,
+            "middle": 0.8,
+            "ring": 0.02,
+            "pinky": 0.02
+          },
+          "thumb": {
+            "curl": 0.72,
+            "spread": 0.72
+          },
+          "spread": 0.15,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    },
+    {
+      "id": "isl-fs-9",
+      "gloss": "9",
+      "displayLabel": "9",
+      "kind": "number",
+      "languageTag": "isl",
+      "english": "number 9",
+      "durationMs": 520,
+      "reviewStatus": "draft",
+      "handshape": "Index finger and thumb form a circle, others extended",
+      "location": "neutral-space",
+      "movement": "Static hold",
+      "palmOrientation": "Palm facing the addressee",
+      "notes": "ASL-style reference numerals — pending Indian Sign Language review; ISL number signs must be confirmed by a deaf signer before release",
+      "tags": [
+        "fingerspelling",
+        "one-handed"
+      ],
+      "base": {
+        "right": {
+          "position": {
+            "x": 0.65,
+            "y": 0.65
+          },
+          "orientation": {
+            "roll": 0,
+            "yaw": -30,
+            "pitch": 0
+          },
+          "fingers": {
+            "index": 0.78,
+            "middle": 0.02,
+            "ring": 0.02,
+            "pinky": 0.02
+          },
+          "thumb": {
+            "curl": 0.72,
+            "spread": 0.62
+          },
+          "spread": 0.2,
+          "scale": 1
+        }
+      },
+      "keyframes": [
+        {
+          "t": 0,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.662
+            }
+          }
+        },
+        {
+          "t": 0.3,
+          "right": {
+            "position": {
+              "x": 0.65,
+              "y": 0.65
+            }
+          },
+          "ease": "spring"
+        },
+        {
+          "t": 1,
+          "right": {
+            "position": {
+              "x": 0.654,
+              "y": 0.646
+            }
+          },
+          "ease": "easeInOut"
+        }
+      ]
+    }
+  ]
+}
