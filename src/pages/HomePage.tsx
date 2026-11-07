@@ -3,7 +3,8 @@
  */
 import { Link } from 'react-router-dom';
 import { AvatarPlayer } from '../components/avatar/AvatarPlayer';
-import { DEMO_ANIMATIONS, FINGERSPELLING_ANIMATIONS } from '../data/animations';
+import { DEMO_ANIMATIONS } from '../data/animations';
+import { HANDSHAPES } from '../core/rig/handshapes';
 import { Icon, type IconName } from '../components/ui/Icon';
 import { useSettings } from '../store/settings';
 
@@ -17,7 +18,7 @@ const FEATURES: Array<{ icon: IconName; title: string; body: string; to: string;
   },
   {
     icon: 'grid',
-    title: `${FINGERSPELLING_ANIMATIONS.length + 35}+ handshapes`,
+    title: `${HANDSHAPES.length} handshapes`,
     body: 'Every handshape is a set of finger joint angles with anatomical limits, so fingers never bend backwards.',
     to: '/gallery',
     cta: 'Open the handshape gallery',
@@ -28,6 +29,13 @@ const FEATURES: Array<{ icon: IconName; title: string; body: string; to: string;
     body: 'Author your own animation: place keyframes per track on a timeline, preview live, then export the JSON.',
     to: '/studio',
     cta: 'Open Sign Studio',
+  },
+  {
+    icon: 'camera',
+    title: 'Sign to text — not yet',
+    body: 'Recognition is Phase 4. The camera screen explains exactly how it will work and lets you check framing and light locally, with nothing recorded.',
+    to: '/camera',
+    cta: 'Open the camera screen',
   },
 ];
 
@@ -70,7 +78,7 @@ export function HomePage() {
         <AvatarPlayer animations={DEMO_ANIMATIONS} showScrubber={false} />
       </section>
 
-      <section className="grid gap-4 sm:grid-cols-3">
+      <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {FEATURES.map((feature) => (
           <Link key={feature.to} to={feature.to} className="card group flex flex-col gap-2 no-underline">
             <span className="grid h-10 w-10 place-items-center rounded-xl bg-brand-soft text-brand">
